@@ -1,3 +1,11 @@
+//Given an array (or string), the task is to reverse the array/string
+
+// Input:
+// 6
+// 2 8 4 7 1 5
+// Output:
+// 5 1 7 4 8 2
+    
 #include<bits/stdc++.h>
 using namespace std;
 void print(vector<int> vec)
