@@ -24,6 +24,17 @@ To solve the above-mentioned problems, data structures come to rescue. Data can 
 
 ## Topics:
 
-| Array | Linked List | Stack | Queue | Binary Tree |
-| Binary Search Tree | Heap | Hashing | Graph | 
-| Matrix | Misc | Advanced Data Structure |
+| List | Links |
+| --- | --- |
+| Array | 
+| Linked List |
+| Stack |
+| Queue |
+| Binary Tree |
+| Binary Search Tree |
+| Heap |
+| Hashing |
+| Graph |
+| Matrix |
+| Misc |
+| Advanced Data Structure |
