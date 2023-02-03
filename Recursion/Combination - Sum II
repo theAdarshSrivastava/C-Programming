@@ -13,10 +13,10 @@ void func(int ind, int n, vector<int> &vec, int arr[], int target)
             return;
         }
 
-    for(int i=ind;i<n;i++)
+    for(int i=ind;i<n;i++)                            // Loop through the array
     {
-        if(i>ind && arr[i]==arr[i-1]) continue;
-        if(arr[i]>target) break;
+        if(i>ind && arr[i]==arr[i-1]) continue;       // To leave the array value whose value are equal to avoid duplicate values
+        if(arr[i]>target) break;                      // To leave the values from which we cannot get the desired outcome
         vec.push_back(arr[i]);
         func(i+1,n,vec,arr,target-arr[i]);
         vec.pop_back();
@@ -29,7 +29,7 @@ int main()
     int arr[n];
     for(int i=0;i<n;i++)
         cin>>arr[i];
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++)                             // Sort the array first
         {
             for(int j=0;j<n;j++)
             {
