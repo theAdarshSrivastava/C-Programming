@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void func(int ind, int n, int arr[], vector<int> &vec, int sum)
+{
+    if(ind==n)
+    {
+        vec.push_back(sum);
+        return;
+    }
+
+    // Pick the element
+    func(ind+1,n,arr,vec,sum+arr[ind]);
+
+    // Not pick the element
+    func(ind+1,n,arr,vec,sum);
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    vector<int> vec;
+    func(0,n,a,vec,0);
+    sort(vec.begin(),vec.end());
+    for(auto it:vec)
+        cout<<it<<" ";
+
+}
